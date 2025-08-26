@@ -11,6 +11,12 @@
     --btn-secondary-color: #F4A24D;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: 400px;
     height: 480px;
