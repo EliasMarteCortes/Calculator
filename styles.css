@@ -38,3 +38,9 @@ body {
     background-color: var(--secondary-color);
     border-radius: 8px;
 }
+
+.btn {
+    padding: 20px 30px 20px;
+    border: none;
+    font-size: 2rem;
+}
