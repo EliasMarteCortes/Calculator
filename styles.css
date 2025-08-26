@@ -34,10 +34,15 @@ body {
 }
 
 .display {
+    font-family: "Courier New", "Monaco", "Consolas", monospace;
     width: 80%;
     height: 50%;
     background-color: var(--secondary-color);
     border-radius: 8px;
+    text-align: right;
+    font-size: 4.5rem;
+    color: #333333c9;
+    font-weight: bold;
 }
 
 .btn {
