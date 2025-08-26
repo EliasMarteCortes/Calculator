@@ -44,3 +44,15 @@ body {
     border: none;
     font-size: 2rem;
 }
+
+.btnRow {
+    display: flex;
+    gap: 10px;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
