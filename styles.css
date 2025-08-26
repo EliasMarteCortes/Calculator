@@ -10,3 +10,10 @@
     --btn-primary-color: #ECECEC;
     --btn-secondary-color: #F4A24D;
 }
+
+.container {
+    width: 400px;
+    height: 480px;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+}
