@@ -40,7 +40,8 @@ body {
 }
 
 .btn {
-    padding: 20px 30px 20px;
+    height: 60px;
+    width: 80px;
     border: none;
     font-size: 2rem;
 }
