@@ -58,3 +58,8 @@ body {
     align-items: center;
     gap: 10px;
 }
+
+.operator {
+    background-color: var(--btn-secondary-color);
+    color: white;
+}
