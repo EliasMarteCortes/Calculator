@@ -23,3 +23,8 @@ body {
     background-color: var(--primary-color);
     border-radius: 5%;
 }
+
+.displayContainer {
+    width: 100%;
+    height: 30%;
+}
