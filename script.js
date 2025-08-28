@@ -1,4 +1,4 @@
-const numBtns = document.querySelectorAll(".number");
+const numBtns = document.querySelectorAll(".btn");
 const displayDiv = document.querySelector(".display");
 
 function add(num1,num2) {
@@ -31,5 +31,10 @@ function operate(num1, operator, num2) {
 }
 
 numBtns.forEach((btn) => btn.addEventListener("click", () => {
-    displayDiv.textContent += btn.textContent;
+    if (btn.textContent === "C") {
+        displayDiv.textContent = "";
+    }
+    else {
+        displayDiv.textContent += btn.textContent;
+    }
 }));
