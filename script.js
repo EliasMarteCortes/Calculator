@@ -1,3 +1,6 @@
+const numBtns = document.querySelectorAll(".number");
+const displayDiv = document.querySelector(".display");
+
 function add(num1,num2) {
     return num1 + num2;
 }
@@ -26,3 +29,7 @@ function operate(num1, operator, num2) {
             return divide(num1,num2);
     }
 }
+
+numBtns.forEach((btn) => btn.addEventListener("click", () => {
+    displayDiv.textContent += btn.textContent;
+}));
