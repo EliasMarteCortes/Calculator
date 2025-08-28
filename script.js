@@ -30,9 +30,27 @@ function operate(num1, operator, num2) {
     }
 }
 
+function checkOperation(str) {
+    let operators = ["+", "-", "×","÷"];
+    for (let op of operators) {
+        index = str.indexOf(op);
+        if (index > 0) {
+            return {
+                num1: parseInt(str.substring(0, index)),
+                operator: op,
+                num2: parseInt(str.substring(index + 1, str.length))
+            }
+        }
+    }
+}
+
 numBtns.forEach((btn) => btn.addEventListener("click", () => {
     if (btn.textContent === "C") {
         displayDiv.textContent = "";
+    }
+    else if (btn.textContent === "=") {
+        expression = checkOperation(displayDiv.textContent);
+        displayDiv.textContent = operate(expression.num1, expression.operator, expression.num2);
     }
     else {
         displayDiv.textContent += btn.textContent;
