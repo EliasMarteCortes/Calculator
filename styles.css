@@ -44,7 +44,14 @@ body {
     font-size: 4.5rem;
     color: #333333c9;
     font-weight: bold;
-    box-shadow: 0px 4px #bdd0c094, 0px -4px #bdd0c094, 6px 10px rgba(0,0,0,0.2), -6px 10px rgba(0,0,0,0.2), 6px -4px rgba(0,0,0,0.2), -6px -4px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px #bdd0c094, 
+    0px -4px #bdd0c094, 
+    6px 10px rgba(0,0,0,0.2), 
+    -6px 10px rgba(0,0,0,0.2), 
+    6px -4px rgba(0,0,0,0.2), 
+    -6px -4px rgba(0,0,0,0.2);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .btn {
