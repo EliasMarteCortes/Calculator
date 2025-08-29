@@ -32,16 +32,17 @@ function operate(num1, operator, num2) {
 
 function checkOperation(str) {
     let operators = ["+", "-", "×","÷"];
-    for (let op of operators) {
-        index = str.indexOf(op);
-        if (index > 0) {
+    for (let i = 1; i < str.length; i++) {
+        let char = str[i];
+        if (operators.includes(char)) {
             return {
-                num1: parseInt(str.substring(0, index)),
-                operator: op,
-                num2: parseInt(str.substring(index + 1, str.length))
+                num1: parseInt(str.substring(0, i)),
+                operator: char,
+                num2: parseInt(str.substring(i + 1))
             }
         }
     }
+    return null;
 }
 
 numBtns.forEach((btn) => btn.addEventListener("click", () => {
