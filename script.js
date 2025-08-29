@@ -51,7 +51,9 @@ numBtns.forEach((btn) => btn.addEventListener("click", () => {
     }
     else if (btn.textContent === "=") {
         expression = checkOperation(displayDiv.textContent);
-        displayDiv.textContent = operate(expression.num1, expression.operator, expression.num2);
+        if (expression) {
+            displayDiv.textContent = operate(expression.num1, expression.operator, expression.num2);
+        }
     }
     else if (["+", "-", "×", "÷"].includes(btn.textContent)){
         expression = checkOperation(displayDiv.textContent);
