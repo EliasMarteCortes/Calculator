@@ -53,7 +53,15 @@ numBtns.forEach((btn) => btn.addEventListener("click", () => {
         expression = checkOperation(displayDiv.textContent);
         displayDiv.textContent = operate(expression.num1, expression.operator, expression.num2);
     }
-    else {
+    else if (["+", "-", "×", "÷"].includes(btn.textContent)){
+        expression = checkOperation(displayDiv.textContent);
+        if (expression) {
+            const result = operate(expression.num1, expression.operator, expression.num2);
+            displayDiv.textContent = result + btn.textContent;
+        } else {
+            displayDiv.textContent += btn.textContent;
+        }
+    } else {
         displayDiv.textContent += btn.textContent;
     }
 }));
